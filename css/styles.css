@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  background: #090b1a;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  max-width: 90%;
+  border-radius: 8px;
+  margin: 2rem 0;
+  background-color: #1b1938;
+}
+
+.image-header-mobile {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.image-header-mobile .image {
+  height: 100%;
+  width: 100%;
+  background: url("../images/image-header-mobile.jpg") no-repeat center/cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: absolute;
+}
+
+.image-header-mobile .filter {
+  background-color: rgba(99, 8, 155, 0.589);
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: absolute;
+}
+
+.intro {
+  text-align: center;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro h1 {
+  font-size: 1.8rem;
+}
+
+.intro h1 .violet {
+  color: #dc65e7;
+}
+
+.intro p {
+  line-height: 1.4rem;
+  color: rgba(255, 255, 255, 0.75);
+  width: 95%;
+  font-size: 1rem;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.stat h2 {
+  font-size: 1.8rem;
+}
+
+.stat p {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 4rem 3.5rem;
+  }
+  .intro h1,
+  .intro p {
+    text-align: left;
+    width: 100%;
+  }
+  .intro .stat h2,
+  .intro .stat p {
+    text-align: center;
+  }
+  .image-header-mobile {
+    display: none;
+  }
+  .image-header-desktop {
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+  }
+  .image-header-desktop .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../images/image-header-desktop.jpg") no-repeat center/cover;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .image-header-desktop .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 8, 155, 0.589);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .stats {
+    margin-top: 2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
